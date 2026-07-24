@@ -1,0 +1,37 @@
+@use '../styles/variables' as *;
+
+.app-shell {
+  height: 100vh;
+}
+
+.sidenav {
+  width: 240px;
+  background: $secondary;
+  color: white;
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  a {
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    &.active {
+      background: rgba(255, 255, 255, 0.08);
+      color: white;
+    }
+  }
+}
+
+.content {
+  background: $background;
+  padding: 24px;
+}
